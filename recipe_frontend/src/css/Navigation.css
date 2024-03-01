@@ -1,0 +1,60 @@
+/* styles.css */
+
+/* Navigation Link */
+.nav-link {
+    color: darkolivegreen;
+    text-decoration: none;
+}
+
+.nav-item {
+    padding-left: 0.3rem;
+    padding-right: 0.4rem;
+}
+
+.user-options {
+    width: 12rem;
+    display: flex;
+    justify-content: left;
+}
+.nav-link:hover {
+    color: black;
+}
+
+/* Navigation Item */
+.nav-item {
+    font-weight: bold;
+}
+
+/* Navigation */
+.navigation {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    height: 3.5rem; /* Adjust height as needed */
+    padding: 0 0.5rem; /* Adjust padding as needed */
+    border-bottom: 1px solid #d1d5db;
+    font-size: 1.25rem;
+}
+
+
+
+
+
+
+button {
+    border: none;
+    height: 2rem;
+    color: darkolivegreen;
+    border-radius: 0.375rem;
+    text-align: center;
+    font-size: 1.25rem;
+}
+button:hover {
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    transition: background-color 0.3s ease;
+}

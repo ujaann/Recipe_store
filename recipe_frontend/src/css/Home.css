@@ -1,0 +1,60 @@
+/* styles.css */
+
+.padding {
+    height: 3rem;
+}
+/* Main Container */
+.main-container {
+    display: grid;
+    gap: 1rem;
+    padding: 2rem 5rem;
+}
+
+/* Grid Container */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+/* Card Container */
+.card-container {
+    position: relative;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+/* Card Link */
+.card-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 0.5rem;
+}
+
+/* Card Image */
+.card-image {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+/* Card Content */
+.card-content {
+    padding: 1rem;
+}
+
+/* Card Title */
+.card-title {
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Card Description */
+.card-description {
+    font-size: 0.875rem;
+    color: #6b7280;
+}

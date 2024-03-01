@@ -1,36 +1,25 @@
-import { useState } from "react";
 import "./App.css";
+import {Route, Routes, useLocation} from "react-router-dom";
+import Home from "./pages/Home.tsx";
+import Register from "./pages/Register.tsx";
+import Login from "./pages/Login.tsx";
+import {useAuthContext} from "./context/useAuthContext.ts";
+import Navigation from "./components/Navigation.tsx";
+
 
 function App() {
-  return (
-    <div className="home page">
-      <div className="home-header">
-        <h2>Your Recipes:</h2>
-      </div>
-      <ol className="recipe-list-container">
-        <li>Dal Bhat</li>
-        <li>Chicken Biryani</li>
-        <li>Pizza</li>
-        <a>see More</a>
-      </ol>
+  const { user } = useAuthContext();
 
-      <a className="add-recipe link">
-        <h2>Add Recipe +icon</h2>
-      </a>
-    </div>
-    // <RouterProvider router={
-    //       createBrowserRouter(
-    //         [
-    //             {path:"/",element:<Home/>},
-    //             {path:"/register",element:<Register/>},
-    //             {path:"/login",element:<Login/>},
-    //             {path:"/dashboard",element:<Dashboard/>},
-    //             {path:"/stating",element:<Stating/>},
-    //             {path:"/users/create",element:<UserCreate/>},
-    //             {path:"/users/table",element:<UsersTable/>}
-    //         ]
-    //     )
-    // }/>
+
+    return (
+    <>
+    <Routes>
+                <Route path={"/"} element={<Home/>}/>
+                <Route path={"/register"} element={<Register/>}/>
+                <Route path={"/login"} element={<Login/>}/>
+    </Routes>
+
+    </>
   );
 }
 
