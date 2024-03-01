@@ -15,9 +15,9 @@ export default function Navigation() {
         <header>
             <nav className={"navigation"}>
                     <Link className="nav-link nav-item" to="/">Home</Link>
-                    <Link className="nav-link" to="/breakfast">Breakfast</Link>
+                    {/* <Link className="nav-link" to="/breakfast">Breakfast</Link>
                     <Link className="nav-link" to="/lunch">Lunch</Link>
-                    <Link className="nav-link" to="/dinner">Dinner</Link>
+                    <Link className="nav-link" to="/dinner">Dinner</Link> */}
                 <div className={"user-options"}>
                     {
                     user?.login?
